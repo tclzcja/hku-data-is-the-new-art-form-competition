@@ -26,12 +26,19 @@ body {
 body > img {
 	position: relative;
 	z-index: 9;
-	max-height: 80%;
-	max-width: 80%;
-	height: 100%;
-	width: 100%;
+	max-width: 55%;
 	opacity: 0.9;
 	filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+}
+
+body > aside {
+	position: fixed;
+	bottom: 1rem;
+	left: 35vw;
+	font-size: 1rem;
+	color: white;
+	background-color: #ffd400;
+	z-index: 19;
 }
 
 body > header {
@@ -40,7 +47,7 @@ body > header {
 	left: 0;
 	z-index: 5;
 	color: white;
-	font-size: 5rem;
+	font-size: 4rem;
 	padding: 1rem;
 	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	background-color: #0259bc;
@@ -56,13 +63,13 @@ body > nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	font-size: 5rem;
-	padding: 1rem;
+	font-size: 4rem;
 	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 body > nav > div {
 	background-color: #ffd400;
+	padding: 1rem;
 }
 
 body > main {
