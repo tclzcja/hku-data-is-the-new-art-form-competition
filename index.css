@@ -26,31 +26,38 @@ body {
 body > img {
 	position: relative;
 	z-index: 9;
-	max-width: 55%;
-	opacity: 0.9;
-	filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.2));
+	width: 60%;
+	opacity: 1;
+	filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.25));
 }
 
 body > aside {
 	position: fixed;
-	bottom: 1rem;
-	left: 35vw;
+	bottom: 0.5rem;
+	left: 32vw;
+	right: 32vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: nowrap;
+	white-space: nowrap;
 	font-size: 1rem;
+	padding: 0.5rem;
 	color: white;
 	background-color: #ffd400;
 	z-index: 19;
 }
 
-body > header {
+body > h1 {
 	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 5;
 	color: white;
-	font-size: 4rem;
 	padding: 1rem;
 	text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 	background-color: #0259bc;
+	font-size: 4rem;
 }
 
 body > nav {
@@ -116,9 +123,37 @@ body > main > section > header {
 	border-radius: 0 0 5px 5px;
 }
 
+body > main > section:first-of-type > header {
+	border-radius: 0 0 5px 0;
+}
+
+body > main > section:last-of-type > header {
+	border-radius: 0 0 0 5px;
+}
+
 body > main > section > footer {
 	width: 100%;
 	background-color: #ffd400;
 	margin-top: 1px;
 	border-radius: 5px 5px 0 0;
+}
+
+body > main > section:first-of-type > footer {
+	border-radius: 0 5px 0 0;
+}
+
+body > main > section:last-of-type > footer {
+	border-radius: 5px 0 0 0;
+}
+
+body > a {
+	color: white;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding: 1rem;
+	font-size: 1rem;
+	z-index: 9999;
+	background-color: #0259bc;
+	text-decoration: none;
 }
